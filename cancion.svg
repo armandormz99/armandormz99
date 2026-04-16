@@ -1,0 +1,53 @@
+<svg fill="none" viewBox="0 0 320 120" width="320" height="120" xmlns="http://w3.org">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://w3.org">
+      <style>
+        .container {
+          display: flex;
+          align-items: center;
+          width: 280px;
+          background: #121212;
+          color: white;
+          padding: 15px;
+          border-radius: 15px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          border: 1px solid #333;
+        }
+        .cover {
+          width: 70px;
+          height: 70px;
+          border-radius: 10px;
+          margin-right: 15px;
+          background: #282828; /* Color de respaldo si no hay imagen */
+        }
+        .song { font-weight: bold; font-size: 16px; margin-bottom: 4px; }
+        .artist { color: #b3b3b3; font-size: 14px; margin-bottom: 10px; }
+        .bar-container { display: flex; align-items: flex-end; height: 20px; gap: 3px; }
+        .bar {
+          width: 4px;
+          background: #1DB954;
+          border-radius: 2px;
+          animation: bounce 1s ease-in-out infinite;
+        }
+        @keyframes bounce {
+          0%, 100% { height: 6px; }
+          50% { height: 20px; }
+        }
+      </style>
+      <div class="container">
+        <!-- Reemplaza la URL de la imagen aquí -->
+        <img class="cover" src="https://streetartlatam.s3.us-east-1.amazonaws.com/production/medium_PORTADA_OFICIAL_NUEVO_ALBUM_NATANAEL_CANO_1_65b13d2128.jpg" />
+        <div class="info">
+          <div class="song">Por que la demora</div>
+          <div class="artist">Natanael Cano</div>
+          <div class="bar-container">
+            <div class="bar" style="animation-delay: 0.1s"></div>
+            <div class="bar" style="animation-delay: 0.3s"></div>
+            <div class="bar" style="animation-delay: 0.2s"></div>
+            <div class="bar" style="animation-delay: 0.4s"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
